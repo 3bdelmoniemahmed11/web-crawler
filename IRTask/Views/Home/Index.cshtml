@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @using (Html.BeginForm("DisaplyLinks", "HomeController", FormMethod.Post))
+    {
+        <form>
+            <div class="form-group">
+                <input type="text" name="text" id="text" class="form-control">
+                
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    }
+</body>
+</html>
